@@ -10,7 +10,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@metamask/eth-sig-util": "^4.0.0",
     "bcrypt": "^5.0.1",
+    "ethereumjs-util": "^7.1.4",
+    "google-spreadsheet": "^3.2.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.2.10",
     "multer": "^1.4.4",
@@ -22,6 +25,7 @@
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.0",
+    "@types/google-spreadsheet": "^3.2.0",
     "@types/jsonwebtoken": "^8.5.8",
     "@types/multer": "^1.4.7",
     "@types/node": "17.0.23",
