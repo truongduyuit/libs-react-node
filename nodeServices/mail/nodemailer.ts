@@ -40,5 +40,6 @@ const nodeMailer = NodeMailer.getInstance({
   username: process.env.MAIL_USERNAME || "/your-username/",
   password: process.env.MAIL_PASSWORD || "/your-password/",
 });
+
 Object.freeze(nodeMailer);
 export { nodeMailer };
