@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 
+/** custom your settings */
 const connectionString =
   process.env.MONGO_CONNECTION_STRING || "/your-connection/";
 const user = process.env.DB_USER;

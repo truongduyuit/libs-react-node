@@ -1,5 +1,6 @@
 import jwt from "jsonwebtoken";
 
+/** custom your settings */
 const jwtSecret = process.env.JWT_SECRET || "/your-secret/";
 const tokenExpire = process.env.TOKEN_EXPIRE;
 
