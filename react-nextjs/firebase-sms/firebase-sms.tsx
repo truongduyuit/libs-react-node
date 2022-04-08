@@ -16,7 +16,7 @@ declare const window: Window &
 
 const FirebaseSmsDefault: IFirebaseSmsContext = {
   phone: "",
-  onSendSms: () => {},
+  sendSms: () => {},
   setphone: () => {},
 };
 
@@ -42,11 +42,11 @@ const FirebaseSmsProvider: React.FC = ({ children }) => {
     );
   }, [auth]);
 
-  const onSendSms = async (): Promise<ConfirmationResult> =>
+  const sendSms = async (): Promise<ConfirmationResult> =>
     await signInWithPhoneNumber(auth, phone, window.recaptchaVerifier);
 
   return (
-    <FirebaseSmsContext.Provider value={{ phone, onSendSms, setphone }}>
+    <FirebaseSmsContext.Provider value={{ phone, sendSms, setphone }}>
       {children}
     </FirebaseSmsContext.Provider>
   );
