@@ -1,6 +1,8 @@
 import { ConfirmationResult } from "firebase/auth";
+import { Dispatch, SetStateAction } from "react";
 
 export interface IFirebaseSmsContext {
   phone: string;
-  onSendSms: () => Promise<ConfirmationResult> | void;
+  sendSms: () => Promise<ConfirmationResult> | void;
+  setphone: Dispatch<SetStateAction<string>>;
 }
